@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+issueTrackerURL="https://github.com/TheShadowWarrior/symbiotemod/issues"
+
+[[mods]]
+modId="symbiotemod"
+version="1.0"
+displayName="Symbiote Mod"
+description='''
+A sentient Sculk symbiote that evolves, empowers, and fuses with the player.
+'''
+
+[[dependencies.symbiotemod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.4.0,)"
+    ordering="NONE"
+    side="BOTH"
