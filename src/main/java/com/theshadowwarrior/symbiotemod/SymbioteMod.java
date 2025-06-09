@@ -16,8 +16,11 @@ public class SymbioteMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        InfectionHandler.register(); // 🔥 Register infection system
-    }
+    InfectionHandler.register();
+    // Register capability handler
+    MinecraftForge.EVENT_BUS.register(SymbioteCapabilityHandler.class);
+}
+
 
     private void clientSetup(final FMLClientSetupEvent event) {
         // Client-only init
