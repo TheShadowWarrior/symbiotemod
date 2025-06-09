@@ -1,7 +1,7 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' } // ✅ THIS is the missing line!
+        maven { url = "https://maven.minecraftforge.net" } // ✅ Required for Forge Gradle plugin
     }
 }
 
