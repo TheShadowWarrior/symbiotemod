@@ -1,1 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.minecraftforge.net/' } // ✅ THIS is the missing line!
+    }
+}
+
 rootProject.name = 'symbiotemod'
