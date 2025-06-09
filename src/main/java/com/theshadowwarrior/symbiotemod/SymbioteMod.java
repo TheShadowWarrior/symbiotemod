@@ -1,5 +1,6 @@
 package com.theshadowwarrior.symbiotemod;
 
+import com.theshadowwarrior.symbiotemod.infection.InfectionHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -15,11 +16,10 @@ public class SymbioteMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Init logic here
+        InfectionHandler.register(); // 🔥 Register infection system
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        // Client-specific stuff
+        // Client-only init
     }
 }
-
